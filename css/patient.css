@@ -1,0 +1,373 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-left .nav-title {
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.nav-middle {
+    flex-grow: 1; /* Keeps spacing in center */
+}
+
+.nav-right {
+    text-align: right;
+}
+
+.date-label {
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    margin: 0;
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-calendar {
+    display: flex;
+    align-items: center;
+}
+
+.btn-calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background 0.2s ease-in-out;
+}
+
+.btn-calendar:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.btn-calendar img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+}
+
+
+/* Container */
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+/* Content Box */
+.welcome-content {
+    width: 100%;
+    
+    background: #fff;
+    padding: 25px;
+   
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-image: url(../img/b3.jpg);
+    background-size: cover;
+    
+}
+
+/* Headings */
+.welcome-content h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.welcome-content h1 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.welcome-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Links */
+.non-style-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.non-style-link:hover {
+    text-decoration: underline;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Input Field */
+.search-input {
+    width: 60%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Search Button */
+.search-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+    /* General Styles */
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header .status-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content {
+    text-align: left;
+}
+
+.h1-dashboard {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.h3-dashboard {
+    font-size: 16px;
+    color: #555;
+}
+
+.dashboard-icon i {
+    font-size: 30px;
+    color: #007bff;
+}
+
+/* Booking Section */
+.booking-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.booking-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.booking-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.booking-info {
+    flex-grow: 1;
+}
+
+.booking-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.booking-detail {
+    font-size: 14px;
+    color: #555;
+}
+
+/* No Booking */
+.no-booking {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    padding: 20px;
+}
+
+.no-booking i {
+    font-size: 40px;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Container */
+.user-settings-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Settings Options */
+.user-settings-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Remove default link styling */
+.custom-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Settings Items */
+.user-settings-item {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    gap: 15px;
+}
+
+.user-settings-item i {
+    font-size: 22px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.user-settings-item:hover {
+    background: #e0f0ff;
+    transform: translateY(-2px);
+}
+
+.user-settings-item:hover i {
+    color: #0056b3;
+}
+
+/* Text Styling */
+.user-settings-item h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.user-settings-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Delete Account Styling */
+.delete-account {
+    background: #ffe5e5 !important;
+}
+
+.delete-account:hover {
+    background: #ffcccc !important;
+}
+
+.delete-account i {
+    color: #d9534f !important;
+    justify-content: space-around;
+}
+
+
+

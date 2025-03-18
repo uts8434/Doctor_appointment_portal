@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b1b2b5;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 45%;
+    background-color: white;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 5px rgba(240, 240, 240, 0.3);
+    text-align: center;
+}
+
+/* Text Styles */
+.header-text {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.sub-text {
+    font-size: 15px;
+    color: rgb(138, 138, 138);
+}
+
+
+.input-group {
+    position: relative;
+    margin: 20px 0;
+    text-align: left;
+}
+
+
+.input-group label {
+    position: absolute;
+    top: -8px;
+    left: 16px;
+    background: white;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.input-group input:hover {
+    border-color: #007BFF;
+}
+
+
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+
+.reset-btn {
+    background-color: #ccc;
+}
+
+
+.submit-btn {
+    background-color: #007BFF;
+    color: white;
+}
+
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+.hover-link1 {
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-link1:hover {
+    opacity: 0.8;
+}
